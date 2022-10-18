@@ -14,3 +14,9 @@ main_str = """
     Далее нужно отсортировать слова в алфавитном порядке, а после сортировки склеить их с помощью метода строк join. Приступим!!!!
 """
 print(get_count_char(main_str))
+
+def normal(d):
+    sum_value = sum(d.values())
+    for key, value in d.items():
+        d[key] = value/sum_value*100
+    return d
